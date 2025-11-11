@@ -250,7 +250,7 @@
         const email = formData.get('email');
         const message = formData.get('message');
 
-        const mailtoLink = `mailto:jogi@example.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(email)}`;
+        const mailtoLink = `mailto: rimzzxofc@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(email)}`;
 
         window.location.href = mailtoLink;
 
