@@ -775,15 +775,6 @@ section {
     animation: pulse 0.6s ease;
 }
 
-.audio-container {
-    position: relative;
-    width: 300px;
-    height: 100px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0
-}
-
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
