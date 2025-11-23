@@ -345,46 +345,6 @@
 
     <!-- Script -->
     <script type="module" src="script.js"></script>
-    
-    <!-- Inline JS for Audio Player -->
-    <script>
-        const audio = document.getElementById('myAudio');
-        const playBtn = document.getElementById('play-btn');
-        const pauseBtn = document.getElementById('pause-btn');
-        const progressBar = document.getElementById('progress-bar');
-        const timeDisplay = document.getElementById('time');
-
-        let isPlaying = false;
-
-        // Play button
-        playBtn.addEventListener('click', () => {
-            audio.play();
-            playBtn.style.display = 'none';
-            pauseBtn.style.display = 'inline';
-            isPlaying = true;
-        });
-
-        // Pause button
-        pauseBtn.addEventListener('click', () => {
-            audio.pause();
-            pauseBtn.style.display = 'none';
-            playBtn.style.display = 'inline';
-            isPlaying = false;
-        });
-
-        // Update progress and time
-        audio.addEventListener('timeupdate', () => {
-            const percent = (audio.currentTime / audio.duration) * 100;
-            progressBar.value = percent;
-            timeDisplay.textContent = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration);
-        });
-
-        // Format time helper
-        function formatTime(seconds) {
-            const mins = Math.floor(seconds / 60);
-            const secs = Math.floor(seconds % 60);
-            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-        }
     </script>
 </body>
 </html>
