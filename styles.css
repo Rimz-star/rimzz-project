@@ -132,6 +132,61 @@ section {
     width: 100%;
 }
 
+/* Styling untuk audio player seperti widget Spotify iOS 18 */    
+.audio-widget {
+   width: 100%;
+   max-width: 600px;
+   background: #1c1c1c;
+   border-radius: 10px;
+   padding: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 2rem 0;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+   position: relative; /* Untuk posisi relatif */
+   opacity: 0; /* Mulai dengan transparan */
+   animation: fadeInUp 0.5s ease forwards; /* Tambahkan animasi fadeInUp */
+   animation-delay: 1s; /* Tunda animasi */  
+}
+
+.audio-widget .cover {
+   width: 80px; /* Ukuran foto 1:1 kecil */
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 1rem; /* Memberikan ruang antara gambar dan info */
+        }
+
+        .audio-widget .audio-info {
+            flex-grow: 1; /* Memungkinkan info audio untuk mengisi ruang */
+            text-align: left; /* Menyelaraskan teks ke kiri */
+        }
+
+        .audio-widget .audio-info h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .audio-widget .audio-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        audio {
+            width: 100%;
+            background: transparent;
+            border: none;
+            margin-top: 0.5rem; /* Menambahkan jarak antara info dan kontrol audio */
+        }
+
+        .caption {
+            margin-top: 0.5rem; /* Menambahkan margin atas untuk penjelasan */
+            font-size: 0.9rem; /* Ukuran font untuk penjelasan */
+            color: #ccc; /* Warna teks penjelasan */
+        }
+
 /* ============================================
    HERO SECTION
    ============================================ */
